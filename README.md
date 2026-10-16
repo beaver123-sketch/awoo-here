@@ -1,6 +1,6 @@
 # 猫在呢 · Awoo Here
 
-**v0.4 · 插画视觉重构** — 手机端猫咪记录与像素小窝 App。
+**v0.5 · 插画视觉重构** — 手机端猫咪记录与像素小窝 App。
 
 ## 线上体验
 https://awoo-here-z49l.vercel.app
@@ -15,10 +15,18 @@ https://awoo-here-z49l.vercel.app
 
 ## 代码说明
 - 仓库根目录 `index.html` 是 **自包含可直接部署的正式应用文件**，内嵌原创插画 SVG、像素角色、样式和运行逻辑，不需要构建命令，Vercel 的 Framework Preset 选择 Other。
-- 独立可编辑源文件打包在同对话的 `Awoo_Here_v0.4_完整源码.zip`，内含 `app.js`、`styles.css`、`design-v04.css`、`assets/illustrations/*.svg`、`assets/sprites/*.png` 和打包脚本 `build_single.py`。
+- 独立可编辑源文件打包在同对话的 `Awoo_Here_v0.5_完整源码.zip`，内含 `app.js`、`styles.css`、`design-v04.css`、`assets/illustrations/*.svg`、`assets/sprites/*.png` 和打包脚本 `build_single.py`。
 - 后续迭代请修改拆分源文件，运行 `python build_single.py` 重建独立体验 HTML，再更新仓库根目录的 `index.html`。旧版 `src/` 文件为历史参考，不是当前线上入口。
 
 ## 数据与隐私
 此公开仓库仅使用手工插画演示图与像素角色，不包含用户上传的猫咪原始照片；从用户手机发布的照片与健康记录只保存在当前浏览器的 LocalStorage 中。卸载或清除站点数据可能丢失，请定期备份。**尚无账户、多端同步、兽医诊断或真实 AI 服务。**
 
 猫在呢 · Awoo Here · 和小猫一起，慢慢生活。
+
+
+## v0.5 视觉资产修复
+- 原圆脸头像已替换为同一只银灰长毛虎斑的细节插画；同步覆盖健康卡、日常、喵喵圈、猫咪切换以及 AI 页面。
+- 底部导航和首页快捷入口换为品牌定制手绘 SVG 图形，无 Emoji 占位。
+- 保留电子小窝的 2D 像素猫与原自动活动逻辑。
+- 支持旧版内置示例插画迁移，但不会覆盖用户自己上传的猫咪照片。
+- 正式部署入口为仓库根目录的 index.html；已打包的可编辑 v0.5 源码另附于聊天交付文件。
